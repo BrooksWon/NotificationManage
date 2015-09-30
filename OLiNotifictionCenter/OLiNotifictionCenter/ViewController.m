@@ -32,9 +32,8 @@ static NSString *const DemoNotification = @"DEMO";
     [OLiNotifictionCenterManage postNotificationName:DemoNotification object:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)dealloc {
+    [OLiNotifictionCenterManage removeObserver:self];
 }
 
 @end
