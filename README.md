@@ -1,0 +1,2 @@
+# NotificationManage
+Manage NSNotification
